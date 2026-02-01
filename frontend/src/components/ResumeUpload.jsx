@@ -185,7 +185,7 @@ const ResumeUpload = () => {
           />
         </div>
       )}      
-    </form>
+     </form> 
   );
 };
 
