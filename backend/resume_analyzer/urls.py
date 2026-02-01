@@ -22,9 +22,9 @@ from django.http import HttpResponse
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('upload-resume/', UploadResumeView.as_view()),
-    path("api/", include("matcher.urls")),
+    #path('upload-resume/', UploadResumeView.as_view()),
+    path("api/matcher/", include("matcher.urls")),
 
-    path('api/', include('resume.urls')),  # <--- include your resume app URLs here
+    path('api/resume/', include('resume.urls')),  # <--- include your resume app URLs here
 
 ]

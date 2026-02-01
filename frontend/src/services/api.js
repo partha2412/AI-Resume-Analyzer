@@ -20,7 +20,7 @@ const BASE_URL = "http://127.0.0.1:8000/api";
 
 export const uploadResume = async (formData) => {
   return axios.post(
-    `${BASE_URL}/upload-resume/`,
+    `${BASE_URL}/resume/upload-resume/`,
     formData,
     {
       headers: {
@@ -32,8 +32,10 @@ export const uploadResume = async (formData) => {
 
 export const matchJobs = async (resumeText) => {
   const response = await fetch(
-    `${BASE_URL}/match-jobs/?resume=${encodeURIComponent(resumeText)}`
+    `${BASE_URL}/matcher/match-jobs/?resume=${encodeURIComponent(resumeText)}`
   );
+  //console.log(response);
+  
   return response.json();
 };
 
