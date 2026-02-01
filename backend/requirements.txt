@@ -5,3 +5,10 @@ mysqlclient
 mysqlclient>=2.2
 
 python-dotenv>=1.0
+djangorestframework
+pdfplumber
+python-docx
+spacy
+en_core_web_sm
+
+

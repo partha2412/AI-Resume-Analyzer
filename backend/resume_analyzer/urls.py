@@ -16,8 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from resume.views import UploadResumeView  
+from django.http import HttpResponse
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('upload-resume/', UploadResumeView.as_view()),
     path("api/", include("matcher.urls")),
+
+    path('api/', include('resume.urls')),  # <--- include your resume app URLs here
+
 ]

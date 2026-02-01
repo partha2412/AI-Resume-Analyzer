@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'matcher',
     'resume',
     'accounts',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
