@@ -12,24 +12,21 @@ function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-purple-100 flex flex-col items-center p-6">
+    <div className="min-h-screen p-6 bg-purple-100 flex flex-col items-center">
 
       {/* Form Card */}
       <div className="bg-white w-full max-w-3xl rounded-lg shadow-md border-t-8 border-purple-500 p-8">
         
         <h1 className="text-2xl font-medium text-gray-800 mb-2">
-          Job Matcher Dashboard
+          Search for Matching Jobs
         </h1>
 
-        <p className="text-gray-600 mb-6">
-          Paste your resume text below to find matching jobs.
-        </p>
 
         {/* Resume Input */}
         <div className="mb-6">
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Resume Text
-          </label>
+          {/* <label className="block text-sm font-medium text-gray-700 opacity-55 mb-2">
+            Your skills
+          </label> */}
 
           <input
             placeholder="Enter your resume details here..."
