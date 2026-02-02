@@ -33,6 +33,7 @@ class UploadResumeView(APIView):
             sgpa=request.data.get("sgpa"),
             backlogs=request.data.get("backlogs"),
         )
+        
 
         # Extract & save skills
         skills = extract_skills(text)
