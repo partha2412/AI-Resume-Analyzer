@@ -3,6 +3,7 @@ import LoginPage from './components/LoginPage';
 import Home from "./pages/Home";
 import Dashboard from './pages/Dashboard';
 import './App.css';
+import AdminDashboard from "./pages/AdminDashboard";
 function App() {
   return (
     <Router>
@@ -13,6 +14,8 @@ function App() {
 
         {/* Dashboard page */}
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/admindashboard" element={<AdminDashboard/>} />
+
       </Routes>
     </Router>
   );
