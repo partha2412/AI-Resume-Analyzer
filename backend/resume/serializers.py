@@ -20,7 +20,7 @@ class ResumeSerializer(serializers.ModelSerializer):
             "passing_year",
             "sgpa",
             "backlogs",
-            "file",
+            # "file",
             "uploaded_at",
             "skills",
         ]

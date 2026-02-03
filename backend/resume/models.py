@@ -9,7 +9,7 @@ class Resume(models.Model):
     backlogs = models.IntegerField()
 
     # Resume data
-    file = models.FileField(upload_to="resumes/")
+    #file = models.FileField(upload_to="resumes/")
     extracted_text = models.TextField(blank=True)
 
     uploaded_at = models.DateTimeField(auto_now_add=True)

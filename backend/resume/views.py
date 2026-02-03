@@ -25,7 +25,7 @@ class UploadResumeView(APIView):
 
         # Save resume
         resume = Resume.objects.create(
-            file=file,
+            #file=file,
             extracted_text=text,
             name=request.data.get("name"),
             year=request.data.get("year"),
