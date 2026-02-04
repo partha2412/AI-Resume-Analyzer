@@ -35,7 +35,20 @@ export const matchJobs = async (resumeText) => {
     `${BASE_URL}/matcher/match-jobs/?resume=${encodeURIComponent(resumeText)}`
   );
   //console.log(response);
-  
+
   return response.json();
 };
 
+export const addJob = async (jobsArray) => {
+  const res = await axios.post(
+    "http://127.0.0.1:8000/api/jobs/create/",
+    jobsArray, // ✅ ARRAY
+    {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
+
+  return res.data;
+};

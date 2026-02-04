@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Dashboard from './pages/Dashboard';
 import './App.css';
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminJobs from "./pages/AdminJobs";
 function App() {
   return (
     <Router>
@@ -14,7 +15,7 @@ function App() {
 
         {/* Dashboard page */}
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/admindashboard" element={<AdminDashboard/>} />
+        <Route path="/admindashboard" element={<AdminJobs/>} />
 
       </Routes>
     </Router>
