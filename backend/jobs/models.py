@@ -5,7 +5,7 @@ from django.db import models
 class Job(models.Model):
     title = models.CharField(max_length=100)
     company = models.CharField(max_length=100)
-    skills = models.TextField(help_text="Comma separated skills")
+    skills = models.JSONField(default=list)        #TextField(help_text="Comma separated skills")
     description = models.TextField()
 
     def __str__(self):
