@@ -6,7 +6,7 @@ def match_resume_with_jobs(resume_text, jobs):
     resume_text = resume_text.lower()
 
     # ✅ Normalize job skills
-    job_texts = [job.skills.lower() for job in jobs]
+    job_texts = [" ".join(job.skills).lower() for job in jobs]
 
     documents = [resume_text] + job_texts
 

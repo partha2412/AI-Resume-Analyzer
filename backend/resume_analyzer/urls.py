@@ -26,5 +26,5 @@ urlpatterns = [
     path("api/matcher/", include("matcher.urls")),
 
     path('api/resume/', include('resume.urls')),  # <--- include your resume app URLs here
-
+    path('api/jobs/', include('jobs.urls')),  # <--- include your jobs app URLs here
 ]
