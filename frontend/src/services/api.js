@@ -52,3 +52,7 @@ export const addJob = async (jobsArray) => {
 
   return res.data;
 };
+
+export const uploadCsv = async (csv_file) => {
+  const response = ""
+}

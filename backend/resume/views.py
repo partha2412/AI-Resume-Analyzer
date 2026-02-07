@@ -22,7 +22,7 @@ class UploadResumeView(APIView):
 
         # Extract text
         text = extract_text(file)
-
+        #print(text)
         # Save resume
         resume = Resume.objects.create(
             #file=file,

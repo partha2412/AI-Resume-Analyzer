@@ -40,6 +40,7 @@ export default function JobCSVUpload() {
 
     try {
       setLoading(true);
+      const data = await uploa
       await axios.post(
         "http://127.0.0.1:8000/api/jobs/upload-csv/",
         formData,
